@@ -1,5 +1,5 @@
 {
-  "compatibilityLevel": 1550,
+  "compatibilityLevel": 1567,
   "model": {
     "annotations": [
       {
@@ -13,6 +13,10 @@
       {
         "name": "PBI_ProTooling",
         "value": "[\"DevMode\"]"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Exercise 5 1 4 6-Update\"]"
       }
     ],
     "culture": "en-US",
@@ -27,6 +31,206 @@
           },
           "contentType": "json"
         }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-CA",
+    "tables": [
+      {
+        "name": "Exercise 5 1 4 6-Update",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "SalesID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ab49b357-6d69-4844-98ee-1c149f266841",
+            "sourceColumn": "SalesID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "SalesOrderNumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "67e99a29-d718-4fa3-bcfc-6c28e6c54f0a",
+            "sourceColumn": "SalesOrderNumber",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DueDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "cbd5e600-78a8-4782-8d10-f263cb88880a",
+            "sourceColumn": "DueDate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SalesAmount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "4ad9b48e-c2e1-4795-b197-a34d8a4dc4b4",
+            "sourceColumn": "SalesAmount",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Region",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bf17af5f-f843-4001-9d7d-b1027d90f473",
+            "sourceColumn": "Region",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MarketingSpend",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b7d60ca4-e226-4756-a1da-bd79a5f73bd6",
+            "sourceColumn": "MarketingSpend",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SalesTeam",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a49bd337-45fd-4fbb-aa5f-3b7e90a67a97",
+            "sourceColumn": "SalesTeam",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9ffb31f8-3bf7-4eab-a04c-57bd1b845cde",
+            "sortByColumn": "Month",
+            "sourceColumn": "Month Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8d286a29-4d3b-4fa8-b7d5-cec2a872a916",
+            "sourceColumn": "Month",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "OrderDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "7772ffc3-0a6c-40ec-8b8d-748defb3e723",
+            "sourceColumn": "OrderDate",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "d53eb2a5-d8f5-41fb-8d19-ff42fc0164b7",
+        "partitions": [
+          {
+            "name": "Exercise 5 1 4 6-Update",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\Ain\\OneDrive\\Data analyst\\Power BI\\Data Analysis and Visualization with Power BI\\02_Indicating-business-performance.xlsx\"), null, true),",
+                "    #\"Exercise.5.1.4.6-Update_Sheet\" = Source{[Item=\"Exercise.5.1.4.6-Update\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Exercise.5.1.4.6-Update_Sheet\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"SalesID\", Int64.Type}, {\"SalesOrderNumber\", type text}, {\"OrderDate\", type date}, {\"DueDate\", type date}, {\"SalesAmount\", type number}, {\"Region\", type text}, {\"MarketingSpend\", Int64.Type}, {\"SalesTeam\", type text}}),",
+                "    #\"Inserted Month Name\" = Table.AddColumn(#\"Changed Type\", \"Month Name\", each Date.MonthName([OrderDate]), type text),",
+                "    #\"Inserted Month\" = Table.AddColumn(#\"Inserted Month Name\", \"Month\", each Date.Month([OrderDate]), Int64.Type),",
+                "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Inserted Month\", \"OrderDate\", \"OrderDate - Copy\"),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Duplicated Column\",{\"OrderDate\"}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns\",{{\"OrderDate - Copy\", \"OrderDate\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
       }
     ]
   }
