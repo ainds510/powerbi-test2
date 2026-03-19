@@ -208,6 +208,42 @@
           }
         ],
         "lineageTag": "d53eb2a5-d8f5-41fb-8d19-ff42fc0164b7",
+        "measures": [
+          {
+            "name": "Sales_TeamA",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('Exercise 5 1 4 6-Update'[SalesAmount]),",
+              "    'Exercise 5 1 4 6-Update'[SalesTeam] = \"Team A\"",
+              ")"
+            ],
+            "lineageTag": "03d257d3-6e49-4aa3-b731-fc4e07af8310"
+          },
+          {
+            "name": "Sales_TeamB",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('Exercise 5 1 4 6-Update'[SalesAmount]),",
+              "    'Exercise 5 1 4 6-Update'[SalesTeam] = \"Team B\"",
+              ")"
+            ],
+            "lineageTag": "16366b5a-de12-4fe7-94d7-deac2a3ebc15"
+          }
+        ],
         "partitions": [
           {
             "name": "Exercise 5 1 4 6-Update",

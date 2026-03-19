@@ -34,6 +34,15 @@
           "x": 560.00,
           "y": 32.00,
           "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"be40d18b6bc71abb64db\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":32,\"z\":1,\"width\":528,\"height\":656,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Exercise 5 1 4 6-Update.Sales_TeamA\"},{\"queryRef\":\"Exercise 5 1 4 6-Update.Sales_TeamB\"}],\"Category\":[{\"queryRef\":\"Exercise 5 1 4 6-Update.Month Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Exercise 5 1 4 6-Update\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Sales_TeamA\"},\"Name\":\"Exercise 5 1 4 6-Update.Sales_TeamA\",\"NativeReferenceName\":\"Sales_TeamA\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Sales_TeamB\"},\"Name\":\"Exercise 5 1 4 6-Update.Sales_TeamB\",\"NativeReferenceName\":\"Sales_TeamB\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Month Name\"},\"Name\":\"Exercise 5 1 4 6-Update.Month Name\",\"NativeReferenceName\":\"Month Name\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 656.00,
+          "width": 528.00,
+          "x": 0.00,
+          "y": 32.00,
+          "z": 1.00
         }
       ],
       "width": 1280.00
